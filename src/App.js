@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from '@shoutem/ui';
+
+import AppHeader from './components/AppHeader';
 
 class App extends Component {
   render() {
     return (
-      <View>
-        <Text>
-          Great App
-        </Text>
-      </View>
-    )
+      <ScrollView>
+        <AppHeader title='Authentication' />
+      </ScrollView>
+    );
   }
 }
 
