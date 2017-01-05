@@ -8,7 +8,7 @@ class LoginForm extends Component {
   render() {
     return (
       <Tabs>
-        <Signin tabLabel='Login' />
+        <Signin tabLabel='Log In' />
         <Signup tabLabel='Create Account' />
       </Tabs>
     );

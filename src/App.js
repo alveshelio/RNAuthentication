@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content } from 'native-base';
+import { Container, Content, Button } from 'native-base';
 import firebase from 'firebase';
 
 import getAppHeader from './components/common/AppHeader';
@@ -10,6 +10,9 @@ import LoginForm from './components/LoginFrom';
 import defaultTheme from '../Themes/default';
 
 class App extends Component {
+
+  state = { loggedIn: false };
+
   componentWillMount() {
     firebase.initializeApp({
       apiKey: 'AIzaSyC06Cc7Nod_QgPvFn_rL8WQjTfuAGrncEM',
